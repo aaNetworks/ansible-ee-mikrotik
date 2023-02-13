@@ -1,0 +1,17 @@
+---
+version: 1
+
+build_arg_defaults:
+  EE_BASE_IMAGE: quay.io/ansible/ansible-runner:stable-2.11-latest
+
+
+# ansible_config: 'ansible.cfg'
+
+dependencies:
+  galaxy: requirements.yml
+  python: requirements.txt
+
+# additional_build_steps:
+#  prepend: |
+#    RUN find /etc/yum.repos.d -type f -exec sed -i 's/mirrorlist=http:\/\/mirrorlist.centos.org/\#mirrorlist=http:\/\/mirrorlist.centos.org/g' {} \;
+#    RUN find /etc/yum.repos.d -type f -exec sed -i 's/\#baseurl=http:\/\/mirror.centos.org/baseurl=http:\/\/vault.centos.org/g' {} \;
