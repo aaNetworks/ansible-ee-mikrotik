@@ -1,0 +1,4 @@
+packaging
+requests[security]
+xmltodict
+paramiko
