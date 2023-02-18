@@ -13,4 +13,4 @@ ansible-builder build --tag ansible-ee-mikrotik --container-runtime docker
 
 # Getting this EE from DockerHub
 
-WIP
+This container is available at https://hub.docker.com/repository/docker/aredan/ansible-ee-mikrotik/general
