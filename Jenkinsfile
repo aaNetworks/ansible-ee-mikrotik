@@ -17,7 +17,7 @@ pipeline {
         stage("Build EE") {
             steps {
                 echo "Building Ansible Execution Environment"
-                sh "ansible-builder build --tag ansible-ee-mikrotik --container-runtime docker"
+                sh "/home/ariel/.local/bin/ansible-builder build --tag ansible-ee-mikrotik --container-runtime docker"
             }
         }
 
